@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./home.png);
+    background-size: 100%;
+}
+
+ul{
+    display: flex;
+}
+
+.wrap{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+.wrap h1{
+    height: 60px;
+    min-width: 700px;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #7c4305 0%, #F5A24A 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wrap h3{
+    margin-left: 35%;
+    font-weight: normal;
+    padding-left: 3px;
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 50px;
+}
+.wrap h3::before{
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 225px;
+    background: gray;
+    position: relative;
+    right: 240px;
+    top: 13px;
+}
+.wrap h3::after{
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 225px;
+    background: gray;
+    position: relative;
+    right: -220px;
+    top: -13px;
+}
+
+.btns{
+    display: flex;
+    padding-left: 5px;
+}
+
+.loginbtn{
+    height: 45px;
+    width: 120px;
+    border-radius:20px ;
+    color: white;
+    background-color: orange;
+    font-size: medium;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+.loginbtn:hover{
+    transform: scale(1.1);
+}
+
+.registerbtn{
+    
+    height: 45px;
+    width: 120px;
+    border-radius:20px ;
+    color: orange;
+    border:3px solid orange;
+    font-size: medium;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.registerbtn:hover{
+    transform: scale(1.1);
+}
+
+
